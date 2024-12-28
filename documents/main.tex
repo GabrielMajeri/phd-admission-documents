@@ -1,0 +1,44 @@
+\documentclass[a4paper, 12pt]{article}
+
+% Customizable page margins
+\usepackage{geometry}
+
+% Better font specification support
+\usepackage{fontspec}
+
+% Support for multiple languages
+\usepackage{polyglossia}
+\setdefaultlanguage{romanian}
+
+% Use vertical space to separate paragraphs, instead of indentation
+\usepackage{parskip}
+
+% Support for interactive hyperlinks in the generated PDF
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Support for bibliography management
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+% Change the default font
+\setmainfont{TeX Gyre Bonum}
+
+\begin{document}
+
+% Disable page numbering
+\pagenumbering{gobble}
+
+\input{thesis-proposal}
+
+\input{scientific-activity}
+
+% Reset margins to their original configuration
+\restoregeometry
+
+\end{document}

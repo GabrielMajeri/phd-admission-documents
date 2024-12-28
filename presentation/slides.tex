@@ -1,0 +1,232 @@
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Cuprins}
+
+\tableofcontents
+\end{frame}
+
+\section{Ce sunt sistemele complexe?}
+
+\begin{frame}
+\frametitle{Sisteme complexe}
+
+\textbf{Sistemele complexe} sunt ansambluri de părți interconectate, care nu pot fi studiate fără a lua în considerare toate interacțiunile dintre componentele lor \autocite{Estrada2023}. \\[1em]
+
+\begin{quote}
+    The study of complex systems in a unified framework has become recognized in recent years as a new scientific discipline, the ultimate of interdisciplinary fields.
+\end{quote}
+\hspace*{\fill} Yaneer Bar-Yam, \emph{Dynamics of Complex Systems} \autocite{Bar-Yam2019}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sisteme complexe}
+
+\begin{columns}
+    \column{0.5\linewidth}
+        Exemple de sisteme complexe:
+        \begin{itemize}
+            \item Sistemul climatic
+            \item Rețele neuronale biologice
+            \item Ecosisteme
+            \item Universul în sine
+        \end{itemize}
+
+    \column{0.55\linewidth}
+        % Create a collage of pictures
+        \begin{tikzpicture}
+            \node (img1) {\includegraphics[height=2.5cm]{climate-system}};
+            \node (img2) [right = -6mm of img1.east] {\includegraphics[height=2.5cm]{brain-connectome}};
+            \node (img3) [below = -6mm of img1.south east] {\includegraphics[height=2.5cm]{galaxy}};
+        \end{tikzpicture}
+\end{columns}
+\end{frame}
+
+\section{Metode computaționale avansate}
+
+\begin{frame}
+\frametitle{Metode computaționale clasice}
+
+Încă de la inventarea calculatoarelor, acestea au fost folosite pentru modelarea matematică a sistemelor studiate și pentru procesarea datelor experimentale. \\[1em]
+
+Câteva exemple de utilizări ale calculatoarelor în știință:
+\begin{itemize}
+    \item \textbf{Simulare statistică și eșantionare}: metode Monte Carlo;
+    \item \textbf{Rezolvarea de ecuații cu derivate parțiale}: metoda diferențelor finite, metoda elementului finit, metode spectrale;
+    \item \textbf{Calcul simbolic}: sisteme de algebră pe calculator (Mathematica, Maple etc.), sisteme de derivare automată;
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Metode computaționale avansate}
+
+Dezvoltarea hardware din ultimii ani a deschis calea către noi oportunități de utilizare a calculatoarelor:
+\begin{itemize}
+    \item Algoritmi paralelizați care rulează pe plăci video (\textbf{GPGPU});
+    \item Procesarea seturilor de date foarte mare (\textbf{big data});
+    \item Utilizarea calculatoarelor cuantice (\textbf{quantum computing});
+\end{itemize}
+
+\begin{figure}[hbp]
+    \centering
+    \begin{tikzpicture}
+        % Create a collage of images
+        \node (img1) {\includegraphics[height=2cm]{nvidia-a100}};
+        \node (img2) [right = -10mm of img1.east] {\includegraphics[height=2cm]{big-data}};
+        \node (img3) [right = -2mm of img2.east] {\includegraphics[height=2cm]{trapped-ion-quantum-computer}};
+    \end{tikzpicture}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{General-purpose computing on graphics processing units}
+
+Acceleratoarele de grafică au o eficiență crescută în efectuarea de calcule numerice și procesarea datelor. În același timp, dezvoltarea de coduri performante pentru GPU aduce cu sine noi provocări.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{leonardo-supercomputer}
+    \caption*{\footnotesize Supercalculatorul Leonardo deținut de CINECA, Bologna}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Big data}
+
+Instrumentele folosite în fizica modernă pot genera cantități enorme de date (e.g.~CERN sau telescopul Webb). Prelucrarea acestora necesită o infrastructură computațională masivă.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{cern-data}
+    \caption*{\footnotesize Date obținute în urma coliziunilor de ioni grei, colectate de LHC @ CERN}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Quantum computing}
+
+Calculatoarele cuantice, care operează pe qubiți și realizează calcule folosind principiile mecanicii cuantice, ar putea oferi un nou model computațional foarte puternic. Simulările pe astfel de sisteme pot contribui la progrese importante în chimie, fizică, criptografie, finanțe etc.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{google-quantum-computer}
+    \caption*{\footnotesize Sycamore, un calculator cuantic construit de Google}
+\end{figure}
+\end{frame}
+
+\section{Exemple de sisteme complexe analizate folosind metode computaționale}
+
+\begin{frame}
+\frametitle{Quantum many-body systems}
+
+Modelarea sistemelor cuantice formate din multe particule care interacționează necesită o cantitate enormă de resurse computaționale. Extrapolarea datelor cu ajutorul rețelelor neuronale artificiale ar putea eficientiza procesul \autocite{PantisSimut2023}. De asemenea, calculatoarele cuantice ar putea fi folosite pentru a efectua simulări cu un ordin de mărime mai performante \autocite{Dumitrescu2018}.
+\end{frame}
+
+\begin{frame}
+\frametitle{Cosmologie}
+
+Încă nu avem o teorie satisfăcătoare care să împace predicțiile Modelului Standard cu observațiile astronomice. Tehnicile de învățare automată ar putea să parcurgă datele disponibile și să propună noi modele în acest sens \autocite{Fernndez2023}.
+\end{frame}
+
+\begin{frame}
+\frametitle{Protein folding}
+
+Proteinele joacă un rol foarte important în biologie și medicină. Metodele de învățare automată s-au dovedit foarte utile în a înțelege modul lor de formare \autocite{Jumper2021} sau mutațiile lor \autocite{Cheng2023}.
+\end{frame}
+
+\begin{frame}
+\frametitle{Materials design}
+
+Dezvoltarea de noi materiale și tehnologii poate fi ghidată de algoritmi care optimizează automat constrângerile disponibile. Exemple de aplicații pot fi în micromateriale \autocite{NguyenThanh2021} sau baterii bazate pe electroliți solizi \autocite{Xiao2019}.
+\end{frame}
+
+\section{Experiența anterioară}
+
+\begin{frame}
+\frametitle{Experiența academică anterioară}
+
+Studiile superioare absolvite:
+\begin{itemize}
+    \item \textbf{Licență} în \textbf{Informatică} la Facultatea de Matematică și Informatică a Universității din București;
+    \item \textbf{Master} în \textbf{Matematică}, programul \emph{Advanced Studies in Mathematics}, FMI-UB.
+\end{itemize}
+Am fost șef de promoție la ambele specializări. \\[1em]
+
+Consider că un doctorat în cadrul \textbf{Școlii Doctorale de Fizică} îmi va oferi un mediu de lucru propice pentru realizarea de cercetare interdisciplinară. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Studii de licență}
+
+În cadrul studiilor de licență am acoperit bazele teoretice ale informaticii și am avut oportunitatea să interacționez cu foarte multe limbaje de programare și tehnologii folosite în practică. \\[1em]
+
+\textbf{Cursuri}: arhitectura sistemelor de calcul (assembly), programare procedurală (C, Python), programare orientată pe obiecte (C++, Java), programare logică, programare funcțională, algoritmi și structuri de date, inteligență artificială, tehnici de optimizare, tehnici de simulare, dezvoltarea de aplicații web.
+\end{frame}
+
+\begin{frame}
+\frametitle{Lucrarea de licență}
+
+Lucrarea mea de licență se intitulează ,,\textbf{Eficientizarea procesului de profilare a performanței}'', realizată sub coordonarea lui conf.~dr.~Paul Irofti. Am implementat o unealtă de măsurare a performanței programelor de Python (cu metrici la nivel de funcții), pe baza unei lucrări de cercetare a grupului Stanford DAWN. Sistemul de control care interfațează cu interpretorul de Python este scris în limbajul Rust.
+\end{frame}
+
+\begin{frame}
+\frametitle{Studii de master}
+
+În cadrul studiilor de master m-am familiarizat cu principalele direcții ale matematicii pure. Programul implică multe ore de cercetare individuală și realizarea de referate și expuneri. \\[1em]
+
+\textbf{Cursuri}: topologie algebrică, algebră comutativă, analiză Fourier, geometrie algebrică, geometrie riemanniană, geometrie complexă, teoria numerelor, sisteme dinamice, algebre Hopf.
+\end{frame}
+
+\begin{frame}
+\frametitle{Lucrarea de disertație}
+
+Lucrarea mea de disertație se intitulează ``\textbf{Modele matematice ale învățării automate}'', coordonată de conf.~dr.~Iulian Cîmpean. Am sintetizat aspecte teoretice folosite în inteligența artificială și în special în învățarea automată. \\[1em]
+
+Lucrarea începe cu o retrospectivă istorică asupra mașinilor Turing și asupra teoriei inferenței inductive. Se prezintă rezultate din teoria Vapnik-Chervonenkis și \emph{PAC learning}, iar apoi sunt introduși algoritmi de învățare cum ar fi mașini cu vector suport și rețele neuronale. Ultimul capitol prezintă câteva direcții viitoare de cercetare, cum ar fi teoria transportului optimal și geometria informației.
+\end{frame}
+
+\section{Etapele propuse \\ în vederea realizării lucrării de doctorat}
+
+\begin{frame}
+\frametitle{Formarea de conexiuni cu mediul de cercetare}
+
+Venind din afara comunității respective, intenționez să încep prin a mă \textbf{familiariza} cu grupurile de cercetare și cu infrastructura disponibilă în cadrul Facultății de Fizică și în institutele asociate de pe platforma Măgurele.
+\end{frame}
+
+\begin{frame}
+\frametitle{Aprofundarea cunoștințelor interdisciplinare}
+
+Folosindu-mă de baza solidă de cunoștințe și de maturitatea științifică dobândită în timpul studiilor anterioare, îmi voi \textbf{aprofunda} cunoștințele de biologie, chimie și fizică, urmărind în același timp aspectele computaționale implicate în aceste domenii.
+\end{frame}
+
+\begin{frame}
+\frametitle{Înțelegerea stării tehnici în domeniu}
+
+Voi parcurge \textbf{lucrări științifice} din jurnale de top, propuse de către coordonatorul de doctorat sau alți profesori, pentru a mă familiariza cu stadiul progresului actual din domeniile respective.
+\end{frame}
+
+\begin{frame}
+\frametitle{Dobândirea de experiență practică}
+
+Vreau să studiez, să înțeleg și eventual să extind unele \textbf{pachete computaționale} folosite în practică, precum și să le optimizez pentru execuția pe infrastructura computațională a Universității. \\[1em]
+
+Un prim exemplu ar fi dezvoltarea de coduri mai eficiente pentru modelarea transportului plasmei folosind ecuația Vlasov \autocite{Baran2005}.
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+
+\centering \Large
+
+Mulțumesc pentru timpul acordat! \\[2em]
+
+\normalsize
+
+Întrebări?
+\end{frame}
+
+% \begin{frame}[noframenumbering,plain,allowframebreaks]
+%     \frametitle{Bibliografie}
+
+%     \printbibliography[heading=none]
+% \end{frame}

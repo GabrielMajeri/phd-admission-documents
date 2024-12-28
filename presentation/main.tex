@@ -1,0 +1,59 @@
+\documentclass{beamer}
+
+% Hide the navigation symbols Beamer generates
+\beamertemplatenavigationsymbolsempty
+
+\AtBeginSection[]{
+  \begin{frame}
+      \vfill
+      \centering
+      \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par%
+      \end{beamercolorbox}
+      \vfill
+  \end{frame}
+}
+
+% Better font specification support
+\usepackage{fontspec}
+
+% Interactive hyperlinks in the generated PDF file
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    linkcolor = ,
+    citecolor = blue,
+    urlcolor = blue
+}
+
+% Support for rendering images
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+
+% Support for drawing graphics
+\usepackage{tikz}
+
+% Better positioning options
+\usetikzlibrary{positioning}
+
+% Bibliography management
+\usepackage[style=verbose-ibid, sorting=none]{biblatex}
+\addbibresource{bibliography.bib}
+
+% More options for figure captions
+\usepackage{caption}
+
+% TODO: choose a nicer theme from the list provided at https://www.overleaf.com/learn/latex/Beamer
+% \usetheme{Madrid}
+
+\title{Studiul dinamicii sistemelor complexe \\ folosind metode computaționale avansate}
+\author{\texorpdfstring{Candidat: }{}Gabriel Majeri \texorpdfstring{\\ Coordonator: prof.~dr.~Virgil Băran}{}}
+\date{Septembrie 2023}
+
+\begin{document}
+
+\input{slides}
+
+\end{document}
