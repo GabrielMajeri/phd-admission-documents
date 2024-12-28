@@ -1,0 +1,6 @@
+# Automatically detect text files and store them using LF line endings
+* text=auto eol=lf
+
+# Store image files using Git LFS
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
